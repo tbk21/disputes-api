@@ -13,7 +13,7 @@ public static class SeedData
 
         var now = DateTimeOffset.UtcNow;
 
-        // Seed users
+        // Seed multiple users
         var customer1 = await db.Users.FirstOrDefaultAsync(x => x.Email == "customer1@demo.local");
         if (customer1 is null)
         {
